@@ -4,7 +4,14 @@
 
 BEFORE USE RUN THIS IN TERMINAL:
 pip install pillow
+
 pip install psutil
+
+pip install requests
+
+pip install beautifulsoup4
+
+These modules are required for the pre-built tools, you can add your own custom tools
 
 
 What is H7T?
