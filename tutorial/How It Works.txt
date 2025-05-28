@@ -1,0 +1,43 @@
+==========================
+ HOW TOOLS WORK IN H7T
+==========================
+
+1. Placement
+------------
+- Every tool is a Python file placed in the 'tools/' directory.
+
+2. Detection
+------------
+- When H7T starts, it scans the 'tools/' folder for all '.py' files.
+- It ignores '__init__.py' and any non-Python files.
+
+3. Requirements
+---------------
+- Each tool must have a function named 'main()'.
+- H7T calls this 'main()' to run the tool when selected.
+
+4. Running a Tool
+-----------------
+- User picks a tool from the H7T menu.
+- H7T dynamically imports the tool's Python module.
+- It executes the tool’s 'main()' function.
+- After completion, control returns to the main menu.
+
+5. Optional Metadata (Future Use)
+---------------------------------
+- Tools may define 'TOOL_NAME' and 'TOOL_DESC' variables.
+- These can be used to display nicer names and descriptions in the menu.
+
+6. Error Handling
+-----------------
+- If a tool lacks a 'main()' function, H7T shows an error message.
+- Exceptions in tools are caught and displayed without crashing H7T.
+
+===============================
+ Summary
+===============================
+Put a Python script with a main() function into 'tools/'.
+H7T loads and runs it dynamically on demand.
+This makes H7T modular and easily extendable.
+
+===============================

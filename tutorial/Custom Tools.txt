@@ -1,0 +1,46 @@
+===============================
+ HOW TO MAKE A CUSTOM H7T TOOL
+===============================
+
+Step 1: Go to the 'tools/' Folder
+---------------------------------
+All custom tools are stored in:
+H7T/tools/
+
+Step 2: Create a New .py File
+-----------------------------
+Example:
+    my_tool.py
+
+Step 3: Write Your Tool With a main() Function
+----------------------------------------------
+Every tool must include a main() function. Here's the required format:
+
+    # tools/my_tool.py
+    def main():
+        print("This is my custom tool.")
+        # Your code goes here
+
+Step 4 (Optional): Add Metadata for Display
+-------------------------------------------
+You can optionally define these variables at the top:
+
+    TOOL_NAME = "Your Tool Name"
+    TOOL_DESC = "A short description"
+
+Example:
+    TOOL_NAME = "Text Reverser"
+    TOOL_DESC = "Reverses input text"
+
+    def main():
+        txt = input("Enter text: ")
+        print("Reversed:", txt[::-1])
+
+Step 5: Run H7T
+---------------
+Just start main.py. Your custom tool will appear in the menu automatically.
+
+========================================================
+That's it! Add as many tools as you like in tools/ folder.
+Each will auto-load into the terminal-based H7T interface.
+========================================================

@@ -1,0 +1,39 @@
+📄 H7T Tool Creation Instructions (for AI or Developers)
+
+Purpose:
+--------
+H7T automatically detects Python files (*.py) in the tools/ folder
+that contain a main() function. Each tool is run via terminal selection.
+
+✅ Required Structure:
+----------------------
+
+Each tool must follow this exact template:
+
+    # tools/your_tool_name.py
+
+    def main():
+        # Your tool logic here
+        print("This is my tool's output")
+        # You can use input(), print(), etc.
+
+    # Do NOT call main() here. H7T does that automatically.
+
+⚠️ Rules to Follow:
+-------------------
+
+- Place the file inside the `tools/` directory.
+- The file must contain a top-level `main()` function.
+- DO NOT call `main()` at the bottom. No `if __name__ == "__main__"` needed.
+- Use `print()` for output and `input()` for interaction.
+- Avoid importing unnecessary libraries.
+
+💡 Example:
+------------
+
+    def main():
+        print("Welcome to my custom tool!")
+        name = input("What's your name? ")
+        print(f"Hello, {name}!")
+
+Once saved in tools/, it will automatically appear in the H7T terminal menu.
