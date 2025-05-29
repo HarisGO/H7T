@@ -30,7 +30,7 @@ Why use H7T?
 
 Who made H7T?
 --------------
-H7T was created by H-7, also known as HarisGO — a forward-thinking coder
+H7T was created by H-7, aka HarisGO (me) — a forward-thinking coder
 who values modular design, innovation, and straightforward utility.
 
 Feel free to expand, customize, and improve H7T.
