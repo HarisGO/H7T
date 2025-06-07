@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x' # Configures a recent stable Python 3 version
+          python-version: '3.x' # Configures a recent stable Python 3 version (e.g., 3.10, 3.11, 3.12)
 
       - name: Install build tools and application dependencies
         run: |
